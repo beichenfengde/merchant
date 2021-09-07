@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="generator" />
+        <module name="huiminpay-common" />
+        <module name="huiminpay-gateway-service" />
+        <module name="huiminpay-merchant-api" />
+        <module name="huiminpay-merchant-application" />
+        <module name="huiminpay-merchant-service" />
+        <module name="huiminpay-transaction-api" />
+        <module name="huiminpay-transaction-service" />
+        <module name="huiminpay-uaa-api" />
+        <module name="huiminpay-uaa-service" />
+        <module name="huiminpay-user-api" />
+        <module name="huiminpay-user-service" />
+        <module name="sailing" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="generator" target="1.8" />
+      <module name="huiminpay" target="1.8" />
+      <module name="huiminpay-common" target="1.8" />
+      <module name="huiminpay-gateway" target="1.8" />
+      <module name="huiminpay-gateway-service" target="1.8" />
+      <module name="huiminpay-merchant" target="1.8" />
+      <module name="huiminpay-merchant-api" target="1.8" />
+      <module name="huiminpay-merchant-application" target="1.8" />
+      <module name="huiminpay-merchant-service" target="1.8" />
+      <module name="huiminpay-transaction" target="1.8" />
+      <module name="huiminpay-transaction-api" target="1.8" />
+      <module name="huiminpay-transaction-service" target="1.8" />
+      <module name="huiminpay-uaa" target="1.8" />
+      <module name="huiminpay-uaa-api" target="1.8" />
+      <module name="huiminpay-uaa-service" target="1.8" />
+      <module name="huiminpay-user" target="1.8" />
+      <module name="huiminpay-user-api" target="1.8" />
+      <module name="huiminpay-user-service" target="1.8" />
+      <module name="sailing" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="huiminpay-common" options="" />
+      <module name="huiminpay-gateway-service" options="-parameters" />
+      <module name="huiminpay-merchant" options="" />
+      <module name="huiminpay-merchant-api" options="" />
+      <module name="huiminpay-merchant-application" options="" />
+      <module name="huiminpay-merchant-service" options="" />
+      <module name="huiminpay-transaction-api" options="-parameters -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_211/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_211/jre/lib/jce.jar&quot;" />
+      <module name="huiminpay-transaction-service" options="-parameters" />
+      <module name="huiminpay-uaa-api" options="-parameters -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_211/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_211/jre/lib/jce.jar&quot;" />
+      <module name="huiminpay-uaa-service" options="-parameters" />
+      <module name="huiminpay-user-api" options="-parameters -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_211/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_211/jre/lib/jce.jar&quot;" />
+      <module name="huiminpay-user-service" options="-parameters" />
+      <module name="sailing" options="" />
+    </option>
+  </component>
+</project>

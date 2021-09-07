@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-common/src/main/java/com/huiminpay/common/cache/util/SecurityUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-merchant" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-merchant-application" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-merchant-application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-merchant-application/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-merchant-application/src/test/java/com/huiminpay/merchant/TokenTemp.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-merchant/huiminpay-merchant-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-merchant/huiminpay-merchant-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-merchant/huiminpay-merchant-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-merchant/huiminpay-merchant-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-merchant/huiminpay-merchant-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-merchant/huiminpay-merchant-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-merchant/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-merchant/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sailing" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sailing/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sailing/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
