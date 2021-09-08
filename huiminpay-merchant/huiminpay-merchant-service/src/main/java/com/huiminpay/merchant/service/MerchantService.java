@@ -70,7 +70,8 @@ public class MerchantService implements MerchantServiceApi {
 
         Merchant merchant = MerchantConvert.INSTANCE.dto2entity(merchantDTO);
 
-        merchant.setAuditStatus("0");  //设置审核状态
+        //设置审核状态0-未申请，1-已申请未审核，2-申请通过，3-申请拒绝
+        merchant.setAuditStatus("0");
         merchantMapper.insert(merchant);
 
 //        merchantDTO.setId(merchant.getId());
