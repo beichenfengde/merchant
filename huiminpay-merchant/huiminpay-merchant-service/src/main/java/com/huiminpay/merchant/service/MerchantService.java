@@ -76,4 +76,20 @@ public class MerchantService implements MerchantServiceApi {
 //        merchantDTO.setId(merchant.getId());
         return MerchantConvert.INSTANCE.entity2dto(merchant);
     }
+
+    @Override
+    @Transactional
+    public MerchantDTO applyMerchant(Long merchantId, MerchantDTO merchantDTO) {
+        //必要字段校验
+        if (merchantDTO==null || merchantId ==null || merchantId == 0L){
+            BusinessCast.cast(CommonErrorCode.E_110006);
+        }
+        Merchant merchant = MerchantConvert.INSTANCE.dto2entity(merchantDTO);
+
+        merchant.setId(merchantId);
+
+        merchantMapper.updateById(merchant);
+
+        return MerchantConvert.INSTANCE.entity2dto(merchant);
+    }
 }

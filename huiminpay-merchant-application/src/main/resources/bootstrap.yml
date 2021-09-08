@@ -23,6 +23,9 @@ spring:
           - refresh: true
             data‐id: spring-boot-http.yaml # spring boot http 配 置
             group: COMMON_GROUP # 通用配置组
+          - refresh: true
+            data‐id: qiniu-common.yaml # qiniu 配 置
+            group: COMMON_GROUP # 通用配置组
   #SpringMVC上传文件配置
   servlet:
     multipart:
@@ -57,13 +60,13 @@ logging:
 sailing:
   url: http://localhost:56085/sailing/
   effectiveTime: 600
-oss:
-  qiniuyun:
-    #填写自己的keyId
-    accessKeyId: "TLRptc6WL0DaAZxqBMW8nsDU1axF2mBTFf2XxdjR"
-    secretKeySecret: J3zQNj74AdpUkyGRWpU0QPJhIzvK4kwRlqCnb8yS
-    bucket: huiminpay-yts
-    domain: http://qy4c9d5xs.hn-bkt.clouddn.com/
+#oss:
+#  qiniuyun:
+#    #填写自己的keyId
+#    accessKeyId: "TLRptc6WL0DaAZxqBMW8nsDU1axF2mBTFf2XxdjR"
+#    secretKeySecret: J3zQNj74AdpUkyGRWpU0QPJhIzvK4kwRlqCnb8yS
+#    bucket: huiminpay-yts
+#    domain: http://qy4c9d5xs.hn-bkt.clouddn.com/
 huiminpay:
   payurl: "http://192.168.2.114:56050/transaction/pay‐entry/"
   c2b:

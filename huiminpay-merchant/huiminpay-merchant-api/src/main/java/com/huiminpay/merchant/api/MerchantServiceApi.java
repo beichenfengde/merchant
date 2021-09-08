@@ -17,4 +17,5 @@ public interface MerchantServiceApi {
     public MerchantDTO registerMerchant(MerchantDTO merchantDTO);
 
 
+    MerchantDTO applyMerchant(Long merchantId, MerchantDTO merchantDTO);
 }

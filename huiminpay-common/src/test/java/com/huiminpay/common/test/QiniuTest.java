@@ -10,10 +10,12 @@ import com.qiniu.storage.UploadManager;
 import com.qiniu.storage.model.DefaultPutRet;
 import com.qiniu.util.Auth;
 import com.qiniu.util.IOUtils;
+import com.sun.deploy.net.URLEncoder;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.UUID;
 
 /**
@@ -21,8 +23,8 @@ import java.util.UUID;
  * @DATE: 2021/9/7 12:23
  */
 public class QiniuTest {
-    public static void main(String[] args) {
-        testUpload();
+    public static void main(String[] args) throws Exception {
+        testDowload();
     }
 
     //测试文件上传
@@ -79,6 +81,21 @@ public class QiniuTest {
         }
 
     }
+
+    private static void testDowload() throws UnsupportedEncodingException {
+        String fileName = "629d0406-b9e5-4b70-a10d-5c951d41cabe";
+        String domainOfBucket = "qz1q8npth.hn-bkt.clouddn.com";
+        String encodedFileName = URLEncoder.encode(fileName, "utf-8").replace("+", "%20");
+        String publicUrl = String.format("%s/%s", domainOfBucket, encodedFileName);
+        String accessKey = "IbxjdcollwXZiLhQoWF2NgMy_P4ZcBtY4Ug-cf6P";
+        String secretKey = "9BkW7vCH-ww6346AXjppzlwgCPtfx7etp_AWfEGl";
+        Auth auth = Auth.create(accessKey, secretKey);
+        long expireInSeconds = 3600;//1小时，可以自定义链接过期时间
+        String finalUrl = auth.privateDownloadUrl(publicUrl, expireInSeconds);
+        System.out.println(finalUrl);
+    }
+
+
 
 
 }

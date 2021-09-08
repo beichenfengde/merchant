@@ -24,7 +24,7 @@ public class TokenTemp {
     @Test
     public void createTestToken() {
                         //1428639378244161538
-        Long merchantId = 1428639378244161538L;//填写用于测试的商户id
+        Long merchantId = 1433010347315470338L;//填写用于测试的商户id
         MerchantDTO merchantDTO = merchantService.queryMerchantById(merchantId);
         JSONObject token = new JSONObject();
         token.put("mobile", merchantDTO.getMobile());

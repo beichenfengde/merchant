@@ -20,7 +20,7 @@ public class SecurityUtil {
 		HttpServletRequest request = ((ServletRequestAttributes) (RequestContextHolder.currentRequestAttributes()))
 				.getRequest();
 		String jsonToken = request.getHeader("authorization");
-		//jsonToken = Bearer eyJtZXJjaGFudElkIjoxNDI4NjM5Mzc4MjQ0MTYxNTM4LCJ1c2VyX25hbWUiOiJzdHJpbmciLCJtb2JpbGUiOiIxODUzMDAzNjc0MyJ9
+		//jsonToken = Bearer eyJtZXJjaGFudElkIjoxMzc2NDM4NTc5NDYyNzM3OTIxLCJ1c2VyX25hbWUiOiLlvKDlhYjnlJ8iLCJtb2JpbGUiOiIxMzA4MTkzNjY2NiJ9
 		if (StringUtils.isEmpty(jsonToken) || !jsonToken.startsWith("Bearer ")) {
 			throw new RuntimeException("token is not as expected");
 		}

@@ -44,18 +44,18 @@ public class MerchantService {
 
     //http://localhost:56085/sailing/
     @Value("${sailing.url}")
-    private  String url;
+    private String url;
 
-    @Value("${oss.qiniuyun.accessKeyId}")
+    @Value("${yun.qiniu.accessKey}")
     private String accessKeyId;
-    @Value("${oss.qiniuyun.secretKeySecret}")
+    @Value("${yun.qiniu.secretKey}")
     private String secretKeySecret;
-    @Value("${oss.qiniuyun.bucket}")
+    @Value("${yun.qiniu.bucket}")
     private String bucket;
-    @Value("${oss.qiniuyun.domain}")
+    @Value("${yun.qiniu.domain}")
     private String domain;
 
-    public MerchantRegisterVO register(MerchantRegisterVO merchantRegisterVO){
+    public MerchantRegisterVO register(MerchantRegisterVO merchantRegisterVO) {
 
         if (merchantRegisterVO == null) {
             BusinessCast.cast(CommonErrorCode.E_100101);
@@ -74,8 +74,6 @@ public class MerchantService {
         }
 
 
-
-
         //远程调用sailing服务校验验证码
         checkMsmCode(merchantRegisterVO.getVerifiykey(), merchantRegisterVO.getVerifiyCode());
 
@@ -87,32 +85,33 @@ public class MerchantService {
         merchantServiceApi.registerMerchant(merchantDTO);
         return merchantRegisterVO;
     }
+
     ////远程调用sailing服务校验验证码
-    private void checkMsmCode(String key,String code){
+    private void checkMsmCode(String key, String code) {
         // http://localhost:56085/sailing/verify?name=sms&verificationCode=qq&verificationKey=22
-        String msmUrl = url+"verify?name=sms&verificationCode="+code+"&verificationKey="+key;
+        String msmUrl = url + "verify?name=sms&verificationCode=" + code + "&verificationKey=" + key;
         try {
             ResponseEntity<Map> responseEntity = restTemplate.exchange(msmUrl,
                     HttpMethod.POST, HttpEntity.EMPTY, Map.class);
-            if (responseEntity == null){
+            if (responseEntity == null) {
                 log.error("校验验证码出错");
 //                throw new RuntimeException("校验验证码出错");
                 throw new BusinessException(CommonErrorCode.E_100102);
             }
             Map entityBody = responseEntity.getBody();
-            if(entityBody == null || entityBody.get("result")==null){
+            if (entityBody == null || entityBody.get("result") == null) {
                 log.error("校验验证码出错");
 //                throw new RuntimeException("校验验证码出错");
                 throw new BusinessException(CommonErrorCode.E_100102);
             }
-            boolean result = (boolean)entityBody.get("result");
-            if(!result){
+            boolean result = (boolean) entityBody.get("result");
+            if (!result) {
                 log.error("校验验证码出错");
 //                throw new RuntimeException("校验验证码出错");
                 throw new BusinessException(CommonErrorCode.E_100102);
             }
-        }catch (Exception e){
-            log.error("校验验证码出错:{}",e.getMessage());
+        } catch (Exception e) {
+            log.error("校验验证码出错:{}", e.getMessage());
 //            throw new RuntimeException("校验验证码出错");
 //            throw new BusinessException(CommonErrorCode.E_100102);
             ExceptionCast.cast(CommonErrorCode.E_100102);
@@ -121,33 +120,33 @@ public class MerchantService {
 
     }
 
-    public String upload(MultipartFile file) {
-        //校验参数合法性
-        if(file == null){
-            BusinessCast.cast(CommonErrorCode.E_100101);
-        }
-        String key = UUID.randomUUID().toString();
-        //文件原始名称 liying.jpg
-        String originalFilename = file.getOriginalFilename();
-        // qwreu123414556.jpg
-        key = key+originalFilename.substring(originalFilename.lastIndexOf("."));
-        System.out.println("================================"+key);
-        try {
-            byte[] bytes = file.getBytes();
-            //把文件信息上传到七牛云
-            QiniuUtil.upload(accessKeyId,secretKeySecret,bucket,key,bytes);
-            return domain+key;
-        } catch (IOException e) {
-            e.printStackTrace();
-            log.error("上传证件异常:{}",e.getMessage());
-            BusinessCast.cast(CommonErrorCode.UNKNOWN);
-        }
-
-        return null;
-    }
-
     public MerchantDTO queryMerchantById(Long merchantId) {
         MerchantDTO merchantDTO = merchantServiceApi.findMerchantById(merchantId);
         return merchantDTO;
     }
+
+
+    public String upload(MultipartFile multipartFile) {
+
+        if (multipartFile == null) {
+            BusinessCast.cast(CommonErrorCode.E_110006);
+        }
+        try {
+            String originalFilename = multipartFile.getOriginalFilename();
+            String fileName = UUID.randomUUID().toString() +
+                    originalFilename.substring(originalFilename.lastIndexOf("."));
+
+            byte[] bytes = multipartFile.getBytes();
+            //校验参数合法性
+            QiniuUtil.upload(accessKeyId, secretKeySecret, bucket, fileName, bytes);
+
+            return domain + fileName;
+        } catch (Exception e) {
+            log.error("上传文件异常:{}", e.getMessage());
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+
 }
