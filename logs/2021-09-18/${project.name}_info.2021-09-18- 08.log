@@ -1,0 +1,8 @@
+[${project.name}][${env:SERVER_PORT}] 2021-09-18 09:00:20,833 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:5) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-09-18 09:00:22,319 DEBUG
+            [NettyServerWorker-3-2][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /169.254.161.126:54718, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 169.254.161.126
+[${project.name}][${env:SERVER_PORT}] 2021-09-18 09:00:24,804 DEBUG
+            [NettyServerWorker-3-3][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /169.254.161.126:54829, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 169.254.161.126
+[${project.name}][${env:SERVER_PORT}] 2021-09-18 09:00:24,805 DEBUG [NettyServerWorker-6-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /169.254.161.126:54895, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 169.254.161.126
+[${project.name}][${env:SERVER_PORT}] 2021-09-18 09:00:25,898 DEBUG
+            [NettyServerWorker-3-5][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.43.78:55069, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 169.254.161.126

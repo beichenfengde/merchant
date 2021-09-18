@@ -1,0 +1,1 @@
+[${project.name}][${env:SERVER_PORT}] 2021-09-16 20:00:00,526 DEBUG [NettyServerWorker-6-3][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.101.3:55543, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.101.3

@@ -77,9 +77,9 @@ public class MerchantService {
         //远程调用sailing服务校验验证码
         checkMsmCode(merchantRegisterVO.getVerifiykey(), merchantRegisterVO.getVerifiyCode());
 
-//        MerchantDTO merchantDTO = new MerchantDTO();
-//        BeanUtils.copyProperties(merchantRegisterVO, merchantDTO);
-        MerchantDTO merchantDTO = MerchantRegisterConvert.INSTANCE.vo2dto(merchantRegisterVO);
+        MerchantDTO merchantDTO = new MerchantDTO();
+        BeanUtils.copyProperties(merchantRegisterVO, merchantDTO);
+//         MerchantDTO merchantDTO = MerchantRegisterConvert.INSTANCE.vo2dto(merchantRegisterVO);
 
         //验证码校验通过，远程调用service添加商户信息
         merchantServiceApi.registerMerchant(merchantDTO);

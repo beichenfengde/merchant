@@ -1,0 +1,17 @@
+# 覆盖spring-boot-http.yaml的项目
+    server:
+      servlet:
+        context-path: /transaction
+
+    # 覆盖spring-boot-starter-druid.yaml的项目
+    spring:
+      datasource:
+        druid:
+          url: jdbc:mysql://127.0.0.1:3306/huiminpay_transaction?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+          username: root
+          password: root
+
+    # 覆盖spring-boot-mybatis-plus.yaml的项目
+    mybatis-plus:
+      typeAliasesPackage: com.huiminpay.transaction.entity
+      mapper-locations: classpath:com/huiminpay/*/mapper/*.xml

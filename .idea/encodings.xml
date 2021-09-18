@@ -8,6 +8,8 @@
     <file url="file://$PROJECT_DIR$/huiminpay-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huiminpay-common/src/main/java/com/huiminpay/common/cache/util/SecurityUtil.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huiminpay-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-gateway/huiminpay-gateway-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huiminpay-merchant" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huiminpay-merchant-application" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huiminpay-merchant-application/src/main/java" charset="UTF-8" />
@@ -21,6 +23,15 @@
     <file url="file://$PROJECT_DIR$/huiminpay-merchant/huiminpay-merchant-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huiminpay-merchant/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huiminpay-merchant/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-transaction" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-transaction/huiminpay-transaction-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-transaction/huiminpay-transaction-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-uaa" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-uaa/huiminpay-uaa-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-uaa/huiminpay-uaa-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-user/huiminpay-user-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay-user/huiminpay-user-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sailing" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sailing/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sailing/src/main/resources" charset="UTF-8" />

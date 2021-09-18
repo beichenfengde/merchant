@@ -12,6 +12,11 @@
     <artifactId>huiminpay-merchant-service</artifactId>
     <dependencies>
         <dependency>
+            <groupId>com.huiminpay</groupId>
+            <artifactId>huiminpay-user-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>

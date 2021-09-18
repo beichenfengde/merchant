@@ -1,0 +1,4 @@
+[${project.name}][${env:SERVER_PORT}] 2021-09-16 21:00:10,375 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:6) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-09-16 21:00:14,251 ERROR
+            [http-nio-57010-exec-5][SmsService.java:68] - 远程调用验证码服务获取验证码异常:I/O error on POST request for "http://localhost:56085/sailing/generate": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect

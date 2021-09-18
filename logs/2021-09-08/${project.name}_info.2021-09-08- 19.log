@@ -1,0 +1,254 @@
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:00:06,073 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:00:07,405 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0xa94bed91, L:/192.168.101.3:55217 - R:/192.168.101.3:20890]], dubbo version: 2.7.3, current host: 192.168.101.3
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:00:07,406 DEBUG
+            [NettyServerWorker-3-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.101.3:55217, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.101.3
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:00:07,406 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.101.3
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:00:31,486 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:00:36,076 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:01,492 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:06,093 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:07,410 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0xa94bed91, L:/192.168.101.3:55217 - R:/192.168.101.3:20890]], dubbo version: 2.7.3, current host: 192.168.101.3
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:07,410 DEBUG
+            [NettyServerWorker-3-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.101.3:55217, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.101.3
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:07,411 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.101.3
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,155 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-2][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation, dubbo version: 2.7.3, current host: 192.168.101.3
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,211 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-2][Log4j2Filter.java:132] - {conn-10005} pool-connect
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,214 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-2][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,APP_ID,APP_NAME,MERCHANT_ID,PUBLIC_KEY,NOTIFY_URL FROM app WHERE MERCHANT_ID = ? 
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,243 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-2][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} created. SELECT  ID,APP_ID,APP_NAME,MERCHANT_ID,PUBLIC_KEY,NOTIFY_URL  FROM app 
+ 
+ WHERE MERCHANT_ID = ?
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,259 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-2][BaseJdbcLogger.java:159] - ==> Parameters: 1433010347315470338(Long)
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,259 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-2][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} Parameters : [1433010347315470338]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,259 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-2][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} Types : [BIGINT]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,263 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-2][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} executed. 3.5559 millis. SELECT  ID,APP_ID,APP_NAME,MERCHANT_ID,PUBLIC_KEY,NOTIFY_URL  FROM app 
+ 
+ WHERE MERCHANT_ID = ?
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,263 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-2][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50001} open
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,264 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-2][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50001} Header: [ID, APP_ID, APP_NAME, MERCHANT_ID, PUBLIC_KEY, NOTIFY_URL]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,269 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-2][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50001} Result: [1435572473599074306, cf2e71c2-3e99-4f29-a46b-42d3b36508b8, yunhe, 1433010347315470338, string, string]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,272 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-2][BaseJdbcLogger.java:159] - <==      Total: 1
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,272 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-2][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50001} closed
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,273 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-2][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} clearParameters. 
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,274 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-2][PreparedStatementPool.java:129] - {conn-10005, pstmt-20001} enter cache
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,274 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-2][Log4j2Filter.java:132] - {conn-10005} pool-recycle
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:13,287 DEBUG
+            [DubboClientHandler-192.168.101.3:20890-thread-2][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcResult, dubbo version: 2.7.3, current host: 192.168.101.3
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,424 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation, dubbo version: 2.7.3, current host: 192.168.101.3
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,427 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:132] - {conn-10005} pool-connect
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,428 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,MERCHANT_NAME,MERCHANT_NO,MERCHANT_ADDRESS,MERCHANT_TYPE,BUSINESS_LICENSES_IMG,ID_CARD_FRONT_IMG,ID_CARD_AFTER_IMG,USERNAME,MOBILE,CONTACTS_ADDRESS,AUDIT_STATUS,TENANT_ID FROM merchant WHERE ID=? 
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,428 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20002} created. SELECT ID,MERCHANT_NAME,MERCHANT_NO,MERCHANT_ADDRESS,MERCHANT_TYPE,BUSINESS_LICENSES_IMG,ID_CARD_FRONT_IMG,ID_CARD_AFTER_IMG,USERNAME,MOBILE,CONTACTS_ADDRESS,AUDIT_STATUS,TENANT_ID FROM merchant WHERE ID=?
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,432 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][BaseJdbcLogger.java:159] - ==> Parameters: 1433010347315470338(Long)
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,433 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20002} Parameters : [1433010347315470338]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,433 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20002} Types : [BIGINT]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,434 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20002} executed. 1.6233 millis. SELECT ID,MERCHANT_NAME,MERCHANT_NO,MERCHANT_ADDRESS,MERCHANT_TYPE,BUSINESS_LICENSES_IMG,ID_CARD_FRONT_IMG,ID_CARD_AFTER_IMG,USERNAME,MOBILE,CONTACTS_ADDRESS,AUDIT_STATUS,TENANT_ID FROM merchant WHERE ID=?
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,435 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:142] - {conn-10005, pstmt-20002, rs-50002} open
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,436 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:142] - {conn-10005, pstmt-20002, rs-50002} Header: [ID, MERCHANT_NAME, MERCHANT_NO, MERCHANT_ADDRESS, MERCHANT_TYPE, BUSINESS_LICENSES_IMG, ID_CARD_FRONT_IMG, ID_CARD_AFTER_IMG, USERNAME, MOBILE, CONTACTS_ADDRESS, AUDIT_STATUS, TENANT_ID]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,436 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:142] - {conn-10005, pstmt-20002, rs-50002} Result: [1433010347315470338, string, string, string, string, string, string, string, string, 14785236987, string, 2, 0]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,437 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][BaseJdbcLogger.java:159] - <==      Total: 1
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,438 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:142] - {conn-10005, pstmt-20002, rs-50002} closed
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,438 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20002} clearParameters. 
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,439 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][PreparedStatementPool.java:129] - {conn-10005, pstmt-20002} enter cache
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,439 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:132] - {conn-10005} pool-recycle
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,443 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:132] - {conn-10005} pool-connect
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,444 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT COUNT( 1 ) FROM app WHERE APP_NAME = ? AND MERCHANT_ID = ? 
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,445 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20003} created. SELECT COUNT( 1 ) FROM app 
+ 
+ WHERE APP_NAME = ? AND MERCHANT_ID = ?
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,447 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][BaseJdbcLogger.java:159] - ==> Parameters: guanshan(String), 1433010347315470338(Long)
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,448 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20003} Parameters : [guanshan, 1433010347315470338]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,448 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20003} Types : [VARCHAR, BIGINT]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,449 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20003} executed. 1.0299 millis. SELECT COUNT( 1 ) FROM app 
+ 
+ WHERE APP_NAME = ? AND MERCHANT_ID = ?
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,449 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:142] - {conn-10005, pstmt-20003, rs-50003} open
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,450 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:142] - {conn-10005, pstmt-20003, rs-50003} Header: [COUNT( 1 )]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,450 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:142] - {conn-10005, pstmt-20003, rs-50003} Result: [0]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,451 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][BaseJdbcLogger.java:159] - <==      Total: 1
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,451 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:142] - {conn-10005, pstmt-20003, rs-50003} closed
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,452 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20003} clearParameters. 
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,452 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][PreparedStatementPool.java:129] - {conn-10005, pstmt-20003} enter cache
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:26,452 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:132] - {conn-10005} pool-recycle
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:27,016 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:132] - {conn-10005} pool-connect
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:27,016 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][BaseJdbcLogger.java:159] - ==>  Preparing: INSERT INTO app ( ID, APP_ID, APP_NAME, MERCHANT_ID, PUBLIC_KEY, NOTIFY_URL ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:27,021 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20004} created. INSERT INTO app  ( ID,
+APP_ID,
+APP_NAME,
+MERCHANT_ID,
+PUBLIC_KEY,
+NOTIFY_URL )  VALUES  ( ?,
+?,
+?,
+?,
+?,
+? )
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:27,023 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][BaseJdbcLogger.java:159] - ==> Parameters: 1435573996114620417(Long), b4aabcb8-dd78-4787-bd73-4f2ea6bba3c0(String), guanshan(String), 1433010347315470338(Long), string(String), string(String)
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:27,023 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20004} Parameters : [1435573996114620417, b4aabcb8-dd78-4787-bd73-4f2ea6bba3c0, guanshan, 1433010347315470338, string, string]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:27,024 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20004} Types : [BIGINT, VARCHAR, VARCHAR, BIGINT, VARCHAR, VARCHAR]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:27,136 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20004} executed. 112.7332 millis. INSERT INTO app  ( ID,
+APP_ID,
+APP_NAME,
+MERCHANT_ID,
+PUBLIC_KEY,
+NOTIFY_URL )  VALUES  ( ?,
+?,
+?,
+?,
+?,
+? )
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:27,137 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][BaseJdbcLogger.java:159] - <==    Updates: 1
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:27,138 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20004} clearParameters. 
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:27,138 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][PreparedStatementPool.java:129] - {conn-10005, pstmt-20004} enter cache
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:27,138 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-3][Log4j2Filter.java:132] - {conn-10005} pool-recycle
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:27,139 DEBUG
+            [DubboClientHandler-192.168.101.3:20890-thread-2][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcResult, dubbo version: 2.7.3, current host: 192.168.101.3
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:31,528 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:01:36,109 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:01,533 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:05,362 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-4][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation, dubbo version: 2.7.3, current host: 192.168.101.3
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:05,367 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-4][Log4j2Filter.java:132] - {conn-10005} pool-connect
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:05,367 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-4][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,APP_ID,APP_NAME,MERCHANT_ID,PUBLIC_KEY,NOTIFY_URL FROM app WHERE MERCHANT_ID = ? 
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:05,371 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-4][BaseJdbcLogger.java:159] - ==> Parameters: 1433010347315470338(Long)
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:05,372 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-4][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} Parameters : [1433010347315470338]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:05,372 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-4][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} Types : [BIGINT]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:05,373 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-4][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} executed. 1.6314 millis. SELECT  ID,APP_ID,APP_NAME,MERCHANT_ID,PUBLIC_KEY,NOTIFY_URL  FROM app 
+ 
+ WHERE MERCHANT_ID = ?
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:05,374 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-4][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50004} open
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:05,374 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-4][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50004} Header: [ID, APP_ID, APP_NAME, MERCHANT_ID, PUBLIC_KEY, NOTIFY_URL]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:05,375 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-4][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50004} Result: [1435572473599074306, cf2e71c2-3e99-4f29-a46b-42d3b36508b8, yunhe, 1433010347315470338, string, string]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:05,376 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-4][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50004} Result: [1435573996114620417, b4aabcb8-dd78-4787-bd73-4f2ea6bba3c0, guanshan, 1433010347315470338, string, string]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:05,376 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-4][BaseJdbcLogger.java:159] - <==      Total: 2
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:05,376 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-4][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50004} closed
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:05,377 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-4][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} clearParameters. 
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:05,377 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-4][Log4j2Filter.java:132] - {conn-10005} pool-recycle
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:05,379 DEBUG
+            [DubboClientHandler-192.168.101.3:20890-thread-2][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcResult, dubbo version: 2.7.3, current host: 192.168.101.3
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:06,128 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:31,542 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:36,132 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,152 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-5][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation, dubbo version: 2.7.3, current host: 192.168.101.3
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,156 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-5][Log4j2Filter.java:132] - {conn-10005} pool-connect
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,156 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-5][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,APP_ID,APP_NAME,MERCHANT_ID,PUBLIC_KEY,NOTIFY_URL FROM app WHERE APP_ID = ? 
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,157 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-5][Log4j2Filter.java:137] - {conn-10005, pstmt-20005} created. SELECT  ID,APP_ID,APP_NAME,MERCHANT_ID,PUBLIC_KEY,NOTIFY_URL  FROM app 
+ 
+ WHERE APP_ID = ?
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,159 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-5][BaseJdbcLogger.java:159] - ==> Parameters: b4aabcb8-dd78-4787-bd73-4f2ea6bba3c0(String)
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,160 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-5][Log4j2Filter.java:137] - {conn-10005, pstmt-20005} Parameters : [b4aabcb8-dd78-4787-bd73-4f2ea6bba3c0]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,160 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-5][Log4j2Filter.java:137] - {conn-10005, pstmt-20005} Types : [VARCHAR]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,161 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-5][Log4j2Filter.java:137] - {conn-10005, pstmt-20005} executed. 1.1069 millis. SELECT  ID,APP_ID,APP_NAME,MERCHANT_ID,PUBLIC_KEY,NOTIFY_URL  FROM app 
+ 
+ WHERE APP_ID = ?
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,161 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-5][Log4j2Filter.java:142] - {conn-10005, pstmt-20005, rs-50005} open
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,162 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-5][Log4j2Filter.java:142] - {conn-10005, pstmt-20005, rs-50005} Header: [ID, APP_ID, APP_NAME, MERCHANT_ID, PUBLIC_KEY, NOTIFY_URL]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,162 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-5][Log4j2Filter.java:142] - {conn-10005, pstmt-20005, rs-50005} Result: [1435573996114620417, b4aabcb8-dd78-4787-bd73-4f2ea6bba3c0, guanshan, 1433010347315470338, string, string]
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,163 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-5][BaseJdbcLogger.java:159] - <==      Total: 1
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,163 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-5][Log4j2Filter.java:142] - {conn-10005, pstmt-20005, rs-50005} closed
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,164 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-5][Log4j2Filter.java:137] - {conn-10005, pstmt-20005} clearParameters. 
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,164 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-5][PreparedStatementPool.java:129] - {conn-10005, pstmt-20005} enter cache
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,164 DEBUG
+            [DubboServerHandler-192.168.101.3:20890-thread-5][Log4j2Filter.java:132] - {conn-10005} pool-recycle
+[${project.name}][${env:SERVER_PORT}] 2021-09-08 20:02:41,165 DEBUG
+            [DubboClientHandler-192.168.101.3:20890-thread-2][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcResult, dubbo version: 2.7.3, current host: 192.168.101.3
